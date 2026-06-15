@@ -374,5 +374,13 @@ const bills = [
 ];
 
 // Start coding here
+//find total from different location, if the location is the same then sum the total of that location.
+//access location => sum total(each location), location: total, check accumulator, same location: add total
+function totalSum(bills) {
+    return bills.reduce(function getSum(acc, cur) {
+        
+    }, {})
+};
 
-const totalPaidByLocation;
+console.log(totalSum(bills));
+// const totalPaidByLocation;
