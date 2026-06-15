@@ -374,4 +374,17 @@ const bills = [
 ];
 
 // Start coding here
-const totalMembers;
+let memCount = (bills) => {
+  return bills
+    .filter((bills) => bills.member !== null)
+    .map((bills) => bills.member.name)
+    .reduce((acc, cur) => {
+      if (!acc.includes(cur)) {
+        acc.push(cur);
+      }
+      return acc;
+    }, []).length;
+};
+
+const totalMembers = memCount(bills);
+console.log(totalMembers);
